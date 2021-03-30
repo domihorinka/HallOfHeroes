@@ -1,8 +1,27 @@
-import './App.css';
+import React from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import SignLog from './pages/SignLog'
+import Create from './pages/Create'
+import List from './pages/List'
+import Character from './pages/Character'
 
 function App() {
   return (
-    <h1>Hello!</h1>
+    <Router>
+
+      <Route exact path="/" component={Home}></Route>
+
+      <Route exact path="/signlog" component={SignLog}></Route>
+
+      <Route exact path="/create" component={Create}></Route>
+
+      <Route exact path="/list" component={List}></Route>
+
+      <Route exact path="/character" component={Character}></Route>
+
+    </Router>
   );
 }
 
