@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/characters"
+    process.env.MONGODB_URI || "mongodb://localhost/character"
 );
 
 
@@ -24,10 +24,10 @@ const characterSeed = [
     },
 ]
 
-db.Character.remove({})
-    .then(() => db.Character.collection.insertMany(characterSeed))
+db.character.remove({})
+    .then(() => db.character.collection.insertMany(characterSeed))
     .then(data => {
-        console.log(data.result.n + " records insertend!");
+        console.log(data.result.n + " records inserted!");
         process.exit(0);
     })
     .catch(err => {
