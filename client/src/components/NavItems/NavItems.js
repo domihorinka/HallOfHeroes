@@ -10,24 +10,24 @@ export const NavItems = [
         title: 'Home',
         path: '/',
         icon: <FaIcons.FaDungeon />,
-        cName: 'nav-text'
+        cName: 'navText'
     },
     {
         title: 'View All Characters',
         path: '/list',
         icon: <AiIcons.AiOutlineFolderView />,
-        cName: 'nav-text'
+        cName: 'navText'
     },
     {
         title: 'Create New Character',
         path: '/create',
         icon: <IoIcons.IoIosCreate />,
-        cName: 'nav-text'
+        cName: 'navText'
     },
     {
         title: 'Sign Up/Log In',
         path: '/signlog',
         icon: <FiIcons.FiLogIn />,
-        cName: 'nav-text'
+        cName: 'navText'
     },
 ]

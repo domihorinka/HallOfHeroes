@@ -20,14 +20,14 @@ function Nav() {
 
     return (
         <>
-            <div className="sideNav">
+            <div className="nav">
                 {/* ------Hamburger menu Icon------ */}
                 <Link className="menu-bars">
                     <FaIcons.FaBars onClick={showSideNav} />
                 </Link>
             </div>
-            <nav className={sideNav ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-item'>
+            <nav className={sideNav ? 'navMenu active' : 'navMenu'}>
+                <ul className='nav-menu-item' onClick={showSideNav}>
                     <li className='navbar-toggle'>
                         {/* ------Close Menu Icon ------ */}
                         <Link className="menu-bars" to="#">
