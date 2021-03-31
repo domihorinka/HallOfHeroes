@@ -6,11 +6,12 @@ import SignLog from './pages/SignLog'
 import Create from './pages/Create'
 import List from './pages/List'
 import Character from './pages/Character'
+import Nav from './components/Nav/Nav'
 
 function App() {
   return (
     <Router>
-
+      <Nav />
       <Route exact path="/" component={Home}></Route>
 
       <Route exact path="/signlog" component={SignLog}></Route>
@@ -21,7 +22,7 @@ function App() {
 
       <Route exact path="/character" component={Character}></Route>
 
-    </Router>
+    </Router >
   );
 }
 
