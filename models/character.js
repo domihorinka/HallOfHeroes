@@ -7,7 +7,7 @@ const characterSchema = new Schema({
         type:String,
         required: true
     },
-    class: {
+    classes: {
         type:String,
         required: true
     },
@@ -18,5 +18,5 @@ const characterSchema = new Schema({
 });
 
 
-const character = mongoose.model("Character",characterSchema);
+const character = mongoose.model("character",characterSchema);
 module.exports = character;
