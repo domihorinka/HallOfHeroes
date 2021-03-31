@@ -5,7 +5,6 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/character"
 );
 
-
 const characterSeed = [
     {
         name: "Flargin",
