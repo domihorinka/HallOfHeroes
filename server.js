@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const mongoose = require('mongoose');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 27017;
 const app = express();
 
 
@@ -32,7 +32,7 @@ mongoose.connect(
 app.use('/api',apiRoutes);
 
 
-
+ 
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
