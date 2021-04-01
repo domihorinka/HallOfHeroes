@@ -1,0 +1,29 @@
+$primaryColor: burlywood;
+
+.footer {
+    background-color: black;
+    bottom: 0;
+    padding-top: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+ .footerDes{
+        color: $primaryColor;
+        text-align: center;
+    }
+
+    .contributors {
+        float: right;
+        color: $primaryColor;
+
+    }
+
+.group {
+        
+        margin-right: 10px;
+        a{
+            color: $primaryColor;
+            text-decoration:none;
+        }
+    }
