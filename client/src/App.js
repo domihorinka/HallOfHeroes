@@ -7,8 +7,8 @@ import Create from './pages/Create'
 import List from './pages/List'
 import Character from './pages/Character'
 import Nav from './components/Nav/Nav'
-import LoginButton from "./components/LoginButton/login-button";
-import {Auth0Provider} from"@auth0/auth0-react";
+// import LoginButton from "./components/LoginButton/login-button";
+// import {Auth0Provider} from"@auth0/auth0-react";
 
 function App() {
   return (
