@@ -41,20 +41,12 @@ const App = () => {
       }
     ]
     return (
-<<<<<<< HEAD
       <CardView
         items={items}
         activeColor='#000'
         imageHeight='650px'
         imageWidth='800px'
       />
-=======
-        <div>
-            <h1>Single Character Sheet Page</h1>
-
-            
-        </div>
->>>>>>> main
     )
   }
   
