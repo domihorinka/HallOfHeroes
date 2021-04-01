@@ -1,11 +1,10 @@
 import React from 'react'
+import Card from '../components/Cards/Card'
 
 function List() {
     return (
-        <div>
-            <h1>List of characters page</h1>
-        </div>
+       <div> hi </div> 
     )
-}
+};
 
 export default List
