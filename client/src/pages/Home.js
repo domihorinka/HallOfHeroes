@@ -1,19 +1,34 @@
 import React from 'react'
-import Nav from '../components/Nav'
+// import Nav from '../components/Nav'
+import LoginButton from "../components/LoginButton/login-button"
+import SignUpbutton from "../components/signup/signup-button"
+import LogOutButton from "../components/LogOutButton/logout-button"
+import {Auth0Provider} from"@auth0/auth0-react";
 
 
 function Home() {
     return (
         <div>
-            <Container className={'container-home'}main={
+            <Auth0Provider
+            domain={`dev-xypsrewa.us.auth0.com`
+            }
+            clientId={`RfFm3fOupR7DPFWKZxVb3TMkruk3EhkY`}
+            redirectUri={window.location.origin}
+            >
+            {/* <Container className={'container-home'}main={
             <>
             <h1>Welcome to the Hall of Heroes</h1>
             <p className={'home-text'}>
                 Login or Sign up to begin
             </p>
+            <LoginButton />
            </>
-            }/>
-            
+            }/> */}
+            <LoginButton />
+            <LogOutButton />
+            <SignUpbutton />
+
+            </Auth0Provider>
         </div>
     )
 }
