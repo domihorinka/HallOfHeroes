@@ -1,5 +1,5 @@
 import React , {useEffect, useState} from 'react'
-import Card from '../components/Cards/Card'
+// import Card from '../components/Cards/Card'
 import API from "../utils/API"
 
 
@@ -14,24 +14,14 @@ function List() {
     function loadCharacters() {
         API.getCharacters()
             .then(res =>
-                setCharacter(res.data)
+                // setCharacter(res.data)
+                console.log(res)
             )
             .catch(err => console.log(err));
     };
   return (
       <>
-      {character.map( char =>{
-
-        return (
-          <Card 
-          name={char.name}
-          class={char.class}
-          level={char.level}
-          image={char.image}
-          />
-        );
-
-        })}
+     <h1>hello from list</h1>
       
       </>
   )
