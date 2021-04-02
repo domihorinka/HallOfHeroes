@@ -1,6 +1,6 @@
 import React from 'react'
-import { CardView } from 'react-card-with-image'
-import 'react-card-with-image/dist/index.css'
+// import { CardView } from 'react-card-with-image'
+// import 'react-card-with-image/dist/index.css'
 
 // const App = () => {
 //   const items = [
