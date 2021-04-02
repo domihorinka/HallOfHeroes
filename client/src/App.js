@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './pages/Home'
 import SignLog from './pages/SignLog'
@@ -15,15 +15,17 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Route exact path="/" component={Home}></Route>
+      <Switch>
+      <Route exact path={"/"} ><Home /></Route>
 
-      <Route exact path="/signlog" component={SignLog}></Route>
+      <Route exact path={"/signlog"} ><SignLog /></Route>
 
-      <Route exact path="/create" component={Create}></Route>
+      <Route exact path={"/create"} ><Create /></Route>
 
-      <Route exact path="/list" component={List}></Route>
+      <Route exact path={"/list"} ><List /></Route>
 
-      <Route exact path="/character" component={Character}></Route>
+      <Route exact path={"/character"}> <Character /></Route>
+      </Switch>
       <Footer />
     </Router >
   );

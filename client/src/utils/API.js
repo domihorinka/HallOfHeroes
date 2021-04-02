@@ -2,16 +2,16 @@ import axios from "axios";
 
 export default {
     getCharacters: () =>{
-        return axios.get('http://localhost:27017/api/characters/');
+        return axios.get('/api/characters');
     },
     getCharacter: (id) =>{
-        return axios.get('http://localhost:27017/api/characters/' + id);
+        return axios.get('/api/characters' + id);
     },
     deleteCharacter: (id) =>{
-        return axios.delete('http://localhost:27017/api/characters/' + id);
+        return axios.delete('/api/characters' + id);
     },
 
     saveCharacter: (charData) =>{
-        return axios.post('http://localhost:27017/api/characters/',charData);
+        return axios.post('/api/characters',charData);
     },
 }
