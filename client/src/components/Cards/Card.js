@@ -7,9 +7,9 @@ const Card = (props) => {
     const items = [
       {
         id: 1,
-        name: {props.name},
-        class: {props.class},
-        level: {props.level},
+        name: props.name,
+        class: props.class,
+        level: props.level,
         image: littlebirddude
       }
     ]
