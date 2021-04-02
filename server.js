@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 27017;
 const app = express();
 
 
-require('dotenv').config();
+
 
 
 // Define middleware here
