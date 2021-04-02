@@ -1,55 +1,56 @@
-.nav{
-background-color: black;
-height: 80px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+.nav {
+  background-color: black;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-bars {
-    margin-left: 20px;
-    font-size: 20px;
-    color: white;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 .navMenu {
-    background-color: black;
-    height: 100vh;
-    list-style-type: none;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 200ms;
+  background-color: black;
+  height: 100vh;
+  list-style-type: none;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: 350ms;
+  transition: 350ms;
 }
 
 .navMenu.active {
-    left: 0;
-    transition: 200ms;
+  left: 0;
+  -webkit-transition: 350ms;
+  transition: 350ms;
 }
 
 .navText {
-    padding: 50px 20px 40px 16px;
-    /* justify-content: start; */
- display: flex;
+  padding: 8px 0px 8px 16px;
+  /* justify-content: start; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.navText a{
-    text-decoration: none;
-    color: burlywood;
-    font-size: 20px;
-    width: 95%;
-    /* height: 100%; */
-    /* display: flex; */
-    align-items: center;
-    /* padding: 0 16px; */
-    border-radius: 4px;
+.navText a {
+  text-decoration: none;
 }
-
-.navText a:hover{
-    background: burlywood;
-    color: black;
-}
-
+/*# sourceMappingURL=Nav.css.map */

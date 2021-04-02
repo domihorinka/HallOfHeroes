@@ -4,7 +4,6 @@ import API from "../utils/API"
 // get data and display.
 function Create() {
     const [character, setCharacter] = useState([])
-    const[formObject, setFormObject] = useState({})
 
     useEffect(()=> {
         loadCharacters()
@@ -23,7 +22,7 @@ function Create() {
                 <div>
             {character.map( char => {
                   return (
-                    <div>
+                    <div key={char.name}>
                           {char.name} by {char.class}
                     </div>
                   );

@@ -1,10 +1,12 @@
 import React from 'react'
 // import Nav from '../components/Nav'
+
+import AuthNav from "../components/AuthNav/AuthNav"
 import LoginButton from "../components/LoginButton/login-button"
 import SignUpbutton from "../components/signup/signup-button"
 import LogOutButton from "../components/LogOutButton/logout-button"
 import {Auth0Provider} from"@auth0/auth0-react";
-
+import results from "./Question"
 
 function Home() {
     return (
@@ -24,10 +26,10 @@ function Home() {
             <LoginButton />
            </>
             }/> */}
-            <LoginButton />
-            <LogOutButton />
+            
+  
             <SignUpbutton />
-
+            <AuthNav />
             </Auth0Provider>
         </div>
     )

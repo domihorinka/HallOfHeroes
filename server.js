@@ -10,7 +10,7 @@ require('dotenv').config();
 
 
 // Define middleware here
-const apiRoutes = require("./routes/apiRoutes")
+const routes = require("./routes")
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
@@ -21,15 +21,14 @@ if (process.env.NODE_ENV === "production") {
 
 // Define API routes here
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/character",
+  process.env.MONGODB_URI || "mongodb://localhost:27017/character",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
   }
 );
-
-app.use('/api',apiRoutes);
+app.use(routes);
 
 
  
