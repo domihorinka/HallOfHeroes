@@ -1,6 +1,51 @@
-import React from 'react'
-// import { CardView } from 'react-card-with-image'
-// import 'react-card-with-image/dist/index.css'
+import { CardView } from 'react-card-with-image'
+import 'react-card-with-image/dist/index.css'
+import React , {useEffect, useState} from 'react'
+import littlebirddude from '../images/littlebirddude.png'
+
+import API from "../utils/API"
+
+const Character = () => {
+  const [character, setCharacter] = useState([])
+
+  useEffect(()=> {
+      loadCharacters()
+  }, [])
+
+  function loadCharacters() {
+      API.getCharacters()
+          .then(res =>
+              setCharacter(res.data)
+          )
+          .catch(err => console.log(err));
+  };
+  const items =[
+    // {
+    //   id: char._id,
+    //   header: char.name,
+    //   description: char.level,
+    //   image: littlebirddude
+    // }
+  
+  ]
+  character.map((char) => {
+    items.push({
+      id: char._id,
+      header: char.name,
+      description: char.level,
+      image: littlebirddude
+    })
+  })
+  return (
+        <CardView
+          image={littlebirddude}
+          items={items}
+          activeColor='#000'
+          imageHeight='650px'
+          imageWidth='800px'
+        />
+      )
+}
 
 // const App = () => {
 //   const items = [
@@ -51,12 +96,5 @@ import React from 'react'
 // }
 
 // export default App
-function Character() {
-  return (
-    <div>
-      <h1>Single Character Sheet Page</h1>
-    </div>
-  )
-}
 
 export default Character

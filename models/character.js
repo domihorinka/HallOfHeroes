@@ -57,6 +57,9 @@ const characterSchema = new Schema({
     appearance: {
         type: String,
     },
+    // image: {
+    //     type:
+    // }
 });
 
 const character = mongoose.model("character",characterSchema);
