@@ -23,7 +23,7 @@ function List() {
       {character.map( char =>{
 
         return (
-          <Card 
+          <Card key={char.name}
           name={char.name}
           class={char.class}
           level={char.level}
