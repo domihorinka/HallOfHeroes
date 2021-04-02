@@ -7,8 +7,9 @@ import Create from './pages/Create'
 import List from './pages/List'
 import Character from './pages/Character'
 import Nav from './components/Nav/Nav'
-// import LoginButton from "./components/LoginButton/login-button";
-// import {Auth0Provider} from"@auth0/auth0-react";
+import Footer from './components/Footer/Footer'
+import LoginButton from "./components/LoginButton/login-button";
+import { Auth0Provider } from "@auth0/auth0-react";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Route exact path="/list" component={List}></Route>
 
       <Route exact path="/character" component={Character}></Route>
-
+      <Footer />
     </Router >
   );
 }
