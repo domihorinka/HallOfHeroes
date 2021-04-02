@@ -11,7 +11,7 @@ export default {
         return axios.delete('/api/character/' + id);
     },
 
-    saveCharacter: () =>{
-        return axios.post('/api/character',charData);
+    saveCharacter: (charData) =>{
+        return axios.post('/api/character', charData);
     },
 }

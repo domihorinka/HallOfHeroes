@@ -33,7 +33,7 @@ router.put('/api/character/:id',({body,params}, res) =>{
 
 router.get("/character",(req,res) => {
     db.character.find({
-        title:{
+        name:{
             $regex: new RegExp(req.query.q, 'i')
         }
     })
