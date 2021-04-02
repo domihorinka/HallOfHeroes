@@ -2,11 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const mongoose = require('mongoose');
-const PORT = process.env.PORT || 27017;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 
-require('dotenv').config();
+
 
 
 // Define middleware here
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Define API routes here
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/character",
+  process.env.MONGODB_URI || "mongodb://localhost/character",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
