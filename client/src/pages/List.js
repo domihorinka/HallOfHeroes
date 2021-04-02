@@ -1,21 +1,39 @@
-import React from 'react'
-import 'react-card-with-image/dist/index.css'
+import React , {useEffect, useState} from 'react'
 import Card from '../components/Cards/Card'
-import seed from '../../../scripts/seed.json'
+import API from "../utils/API"
+
 
 
 function List() {
+  const [character, setCharacter] = useState([])
+
+    useEffect(()=> {
+        loadCharacters()
+    }, [])
+
+    function loadCharacters() {
+        API.getCharacters()
+            .then(res =>
+                setCharacter(res.data)
+            )
+            .catch(err => console.log(err));
+    };
   return (
-    <>
-      <Card
-        name={seed[0].name}
-        class={seed[0].class}
-        level={seed[0].level}
-        image={seed[0].image}
-      />
+      <>
+      {character.map( char =>{
 
+        return (
+          <Card 
+          name={char.name}
+          class={char.class}
+          level={char.level}
+          image={char.image}
+          />
+        );
 
-    </>
+        })}
+      
+      </>
   )
 }
 export default List
