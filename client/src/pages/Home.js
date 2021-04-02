@@ -1,5 +1,7 @@
 import React from 'react'
 // import Nav from '../components/Nav'
+
+import AuthNav from "../components/AuthNav/AuthNav"
 import LoginButton from "../components/LoginButton/login-button"
 import SignUpbutton from "../components/signup/signup-button"
 import LogOutButton from "../components/LogOutButton/logout-button"
@@ -24,10 +26,10 @@ function Home() {
             <LoginButton />
            </>
             }/> */}
-            <LoginButton />
-            <LogOutButton />
+            
+  
             <SignUpbutton />
-
+            <AuthNav />
             </Auth0Provider>
         </div>
     )
