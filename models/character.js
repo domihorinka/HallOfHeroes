@@ -6,10 +6,45 @@ const characterSchema = new Schema({
         type:String,
         required: true
     },
-    class: {
-        type:String,
-        required: true
-    },
+    class: [{
+        barbarian: {
+            type:String,
+        },
+        bard: {
+            type:String,
+        },
+        cleric: {
+            type:String,
+        },
+        druid: {
+            type:String,
+        },
+        fighter: {
+            type:String,
+        },
+        monk: {
+            type:String,
+        },
+        paladin: {
+            type:String,
+        },
+        ranger: {
+            type:String,
+        },
+        rogue: {
+            type:String,
+        },
+        sorcerer: {
+            type:String,
+        },
+        warlock: {
+            type:String,
+        },
+        wizard: {
+            type:String,
+        },
+
+    }],
     level: {
         type:Number,
         required: true
