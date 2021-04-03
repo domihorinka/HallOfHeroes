@@ -1,35 +1,41 @@
 import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import Container from '../components/Container/Container'
 import littlebirddude from '../images/littlebirddude.png'
 
 import API from "../utils/API"
 
-const Character = () => {
+const Character = (props) => {
   const [character, setCharacter] = useState([])
 
+  const { id } = useParams()
   useEffect(() => {
-    loadCharacters()
+    getCharacter(id)
   }, [])
 
-  function loadCharacters() {
-    API.getCharacters()
+  function getCharacter(id) {
+    API.getCharacter(id)
       .then(res =>
         setCharacter(res.data)
       )
       .catch(err => console.log(err));
   };
-  const items = []
 
-  character.map((char) => {
-    items.push({
-      id: char._id,
-      header: char.name,
-      description: char.level,
-      image: littlebirddude
-    })
-  })
+  // character.map((char) => {
+  //   items.push({
+  //     id: char._id,
+  //     header: char.name,
+  //     description: char.level,
+  //     image: littlebirddude
+  //   })
+  // })
   return (
     <>
-      <h1>Single Character sheet here</h1>
+      <Container>
+        <h1>Single Character sheet here</h1>
+
+
+      </Container>
     </>
   )
 }
