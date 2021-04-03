@@ -14,7 +14,7 @@ function List() {
     function loadCharacters() {
         API.getCharacters()
             .then(res =>
-                // setCharacter(res.data)
+                // setCharacter(res.data),
                 console.log(res)
             )
             .catch(err => console.log(err));
