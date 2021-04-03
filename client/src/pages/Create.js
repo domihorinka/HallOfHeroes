@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
+import Button from '../components/Button/Button'
 import API from "../utils/API"
 
 // get data and display.
 function Create() {
     const [character, setCharacter] = useState([])
 
-    useEffect(()=> {
+    useEffect(() => {
         loadCharacters()
     }, [])
 
@@ -18,18 +19,19 @@ function Create() {
     };
     return (
         <div>
+            <Button />
             {character.length ? (
                 <div>
-            {character.map( char => {
-                  return (
-                    <div key={char.name}>
-                          {char.name} by {char.class}
-                    </div>
-                  );
-                })}
+                    {character.map(char => {
+                        return (
+                            <div key={char.name}>
+                                {char.name} by {char.class}
+                            </div>
+                        );
+                    })}
                 </div>
-               ) : (
-              <h3>No Results to Display</h3>
+            ) : (
+                <h3>No Results to Display</h3>
             )}
         </div>
     )
