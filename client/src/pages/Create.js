@@ -17,20 +17,31 @@ function Create() {
             .catch(err => console.log(err));
     };
     return (
-        <div>
-            {character.length ? (
-                <div>
-            {character.map( char => {
-                  return (
-                    <div key={char.name}>
-                          {char.name} by {char.class}
+        <div className="Create">
+            <div className="text-center">
+                <h1>Create character</h1>
+                {/* <span className="success-message">{successMessage}</span> */}
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6 col-xs-12">
+                        <div className="text-center">
+                            <input 
+                            type="text"
+                            className="form-control"
+                            placeholder="Character name"
+                            name="CharacterName"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
                     </div>
-                  );
-                })}
                 </div>
-               ) : (
-              <h3>No Results to Display</h3>
-            )}
+            </div>
         </div>
     )
 }
