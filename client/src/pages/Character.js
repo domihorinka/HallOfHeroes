@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Container from '../components/Container/Container'
-import littlebirddude from '../images/littlebirddude.png'
+
 
 import API from "../utils/API"
 
