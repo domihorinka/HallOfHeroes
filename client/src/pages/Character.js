@@ -1,7 +1,7 @@
 import { CardView } from 'react-card-with-image'
 import 'react-card-with-image/dist/index.css'
 import React , {useEffect, useState} from 'react'
-import littlebirddude from '../images/littlebirddude.png'
+// import littlebirddude from '../images/littlebirddude.png'
 
 import API from "../utils/API"
 
@@ -33,16 +33,16 @@ const Character = () => {
       id: char._id,
       header: char.name,
       description: char.level,
-      image: littlebirddude
+      // image: littlebirddude
     })
   })
   return (
         <CardView
-          image={littlebirddude}
+          // image={littlebirddude}
           items={items}
           activeColor='#000'
-          imageHeight='650px'
-          imageWidth='800px'
+          // imageHeight='650px'
+          // imageWidth='800px'
         />
       )
 }
