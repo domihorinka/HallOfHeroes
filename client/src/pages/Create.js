@@ -6,54 +6,244 @@ import API from "../utils/API"
 // get data and display.
 function Create() {
     const [character, setCharacter] = useState([])
+    const [formObject, setFormObject]= useState({})
+
+      function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value})
+  };
 
 
-    useEffect(() => {
-        loadCharacters()
-    }, [])
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    if (formObject.name && formObject.class) {
+      API.saveCharacter({
+        name: formObject.name,
+        class: formObject.class,
+        level: formObject.level,
+        hp: formObject.hp,
+        strength: formObject.strength,
+        dexterity: formObject.dexterity,
+        constitution: formObject.constitution,
+        intelligence: formObject.intelligence,
+        wisdom: formObject.wisdom,
+        charisma: formObject.charisma,
+        inventory: formObject.inventory,
+        background: formObject.background,
+        appearance: formObject.appearance,
 
-    function loadCharacters() {
-        API.getCharacter()
-            .then(res =>
-                setCharacter(res.data)
-            )
-            .catch(err => console.log(err));
-    };
-
-    // ------ reusing useState for Modal component------ //
-    const useModal = () => {
-        const [value, setValue] = useState()
-
-        return [value, setValue]
+      })
+        .catch(err => console.log(err));
     }
-
-    const [showModal, setShowModal] = useModal(false)
-
-
+  };
     return (
-        <div>
-            {/* trie to bring in component but wasn't sure how to pass onClick to component */}
-            <button onClick={() => setShowModal(true)}>
-                New Character
-            </button>
-
-            {/* <Modal open={showModal} onCancel={() => setShowModal(false)}>
-                Modal works
-
-            </Modal> */}
-            {character.length ? (
-                <div>
-                    {character.map(char => {
-                        return (
-                            <div key={char.name}>
-                                {char.name} by {char.class}
-                            </div>
-                        );
-                    })}
+        <div className="Create">
+            <div className="text-center">
+                <h1>Create character</h1>
+                {/* <span className="success-message">{successMessage}</span> */}
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6 col-xs-12">
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="Character name"
+                            name="name"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="class"
+                            name="class"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="level"
+                            name="level"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="hit points"
+                            name="hp"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="Strength"
+                            name="strength"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="dexterity"
+                            name="dexterity"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="constitution"
+                            name="constitution"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="intelligence"
+                            name="intelligence"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="wisdom"
+                            name="wisdom"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="number"
+                            className="form-control"
+                            placeholder="charisma"
+                            name="charisma"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="what items and gold does your character have?"
+                            name="inventory"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="What is your character's background"
+                            name="background"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <div className="text-center">
+                            <input 
+                            onChange={handleInputChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="Describe your character's appearance."
+                            name="appearance"
+                            // ref={
+                            //     register({
+                            //         required: "Please name your character"
+                            //     })
+                            // }
+                            />
+                            <div className="line"></div>
+                        </div>
+                        <button className="btn-main-offer create-btn" onClick={handleFormSubmit} type="submit">create character</button>
+                    </div>
                 </div>
-            ) : (
-                <h3>No Results to Display</h3>
-            )}
+            </div>
         </div>
     )
 }
