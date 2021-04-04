@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useParams } from 'react'
 import Button from '../components/Button/Button'
 import Modal from '../components/Modal/Modal.js'
 import API from "../utils/API"
@@ -13,7 +13,7 @@ function Create() {
     }, [])
 
     function loadCharacters() {
-        API.getCharacters()
+        API.getCharacter()
             .then(res =>
                 setCharacter(res.data)
             )
@@ -37,10 +37,10 @@ function Create() {
                 New Character
             </button>
 
-            <Modal open={showModal} onCancel={() => setShowModal(false)}>
+            {/* <Modal open={showModal} onCancel={() => setShowModal(false)}>
                 Modal works
 
-            </Modal>
+            </Modal> */}
             {character.length ? (
                 <div>
                     {character.map(char => {

@@ -5,10 +5,10 @@ export default {
         return axios.get('/api/characters');
     },
     getCharacter: (id) =>{
-        return axios.get('/api/characters' + id);
+        return axios.get('/api/characters/' + id);
     },
     deleteCharacter: (id) =>{
-        return axios.delete('/api/characters' + id);
+        return axios.delete('/api/characters/' + id);
     },
 
     saveCharacter: (charData) =>{
