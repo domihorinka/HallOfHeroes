@@ -5,8 +5,6 @@ const answersOne = ["Strong","Nimble","Mystical"]
 const answersTwoStrong = ["Barbarian","Fighter","Paladin"]
 const answersTwoNimble = ["Rogue","Ranger","Monk"]
 const answersTwoMystical = ["Sorcerer","Wizard","Warlock"]
-const ht = querySelector(".healthtotal")
-ht.addEventListener("click",startingHealth);
 
 const d20 = () => {console.log( Math.floor(Math.random() * 20) + 1)};
 const d6 = () =>  {console.log(Math.floor(Math.random() * 6) + 1)};

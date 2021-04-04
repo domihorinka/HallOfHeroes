@@ -13,14 +13,8 @@ const List = () => {
 
     function loadCharacters() {
         API.getCharacters()
-<<<<<<< HEAD
-            .then(res =>
-                setCharacter(res.data)
-               
-=======
         .then(res =>
             setCharacter(res.data)
->>>>>>> main
             )
             .catch(err => console.log(err));
 
