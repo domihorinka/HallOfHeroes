@@ -16,15 +16,15 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-      <Route exact path={"/"} ><Home /></Route>
+        <Route exact path={"/"} ><Home /></Route>
 
-      <Route exact path={"/signlog"} ><SignLog /></Route>
+        <Route exact path={"/signlog"} ><SignLog /></Route>
 
-      <Route exact path={"/create"} ><Create /></Route>
+        <Route exact path={"/create"} ><Create /></Route>
 
-      <Route exact path={"/list"} ><List /></Route>
+        <Route exact path={"/list"} ><List /></Route>
 
-      <Route exact path={"/character"}> <Character /></Route>
+        <Route exact path="/characters/:id"><Character /></Route>
       </Switch>
       <Footer />
     </Router >
