@@ -1,4 +1,4 @@
-const d20 = () =>{
+const d20 = () => {
     return MAth.floor(Math.random() * 20);
 
 }
