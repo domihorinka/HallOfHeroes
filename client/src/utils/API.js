@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-    getCharacters: () =>{
+    getCharacters: () => {
         return axios.get('/api/characters');
     },
     getCharacter: (id) =>{
@@ -11,7 +11,7 @@ export default {
         return axios.delete('/api/characters/' + id);
     },
 
-    saveCharacter: (charData) =>{
-        return axios.post('/api/characters',charData);
+    saveCharacter: (charData) => {
+        return axios.post('/api/characters', charData);
     },
 }
