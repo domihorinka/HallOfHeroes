@@ -6,7 +6,7 @@ router.route("/")
     .post(charactersController.create)
 
 router
-    .route("/id")
+    .route("/:id")
     .get(charactersController.findById)
     .put(charactersController.update)
     .delete(charactersController.remove)

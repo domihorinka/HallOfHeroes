@@ -15,7 +15,7 @@ const Details = () => {
 
 
 
-  function loadCharacter(id) {
+  function loadCharacter() {
 
     console.log(id)
     API.getCharacter(id)
@@ -26,8 +26,8 @@ const Details = () => {
   }
 
 
-  useEffect((id) => {
-    loadCharacter(id)
+  useEffect(() => {
+    loadCharacter()
   }, [])
 
   console.log(character._id)

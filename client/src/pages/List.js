@@ -3,11 +3,11 @@ import Card from 'react-bootstrap/card';
 import Button from '../components/Button/Button'
 import API from "../utils/API"
 import { Link } from "react-router-dom"
-
+import {useAuth0} from"@auth0/auth0-react";
 
 const List = () => {
+    const {isAuthenticated} = useAuth0();
     const [characters, setCharacters] = useState([])
-    // const [formObject, setFormObject] = useState({})
 
     useEffect(() => {
         loadCharacters()
@@ -30,11 +30,10 @@ const List = () => {
             .catch(err => console.log(err))
     }
 
-    console.log(characters)
-    console.log(characters._id)
-    console.log(characters.id)
 
     return (
+        isAuthenticated && (
+
         <div>
             <Link className={`go-to-create`} to="/create">Create New Character!</Link>
             {characters.map(character => (
@@ -65,6 +64,7 @@ const List = () => {
                 )
             })} */}
         </div>
+        )
     )
 }
 

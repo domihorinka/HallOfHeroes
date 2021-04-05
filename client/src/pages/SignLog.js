@@ -1,9 +1,11 @@
 import React from 'react'
+import AuthNav from "../components/AuthNav/AuthNav"
 
 function SignLog() {
     return (
         <div>
-            <h1>Sign up/Log in page</h1>
+         <AuthNav />
+
         </div>
     )
 }
