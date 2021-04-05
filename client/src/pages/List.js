@@ -40,7 +40,7 @@ const List = () => {
                             <Card.Subtitle className="mb-2 text-muted">{char.level}</Card.Subtitle>
                             <Card.Text>{char.description}</Card.Text>
                             <Button onClick={() => deleteCharacter(char._id)}>Delete</Button>
-                            <Link to={"/characters/ " + char._id}> View Character Sheet</Link>
+                            <Link to={"/characters/" + char._id}> View Character Sheet</Link>
                         </Card.Body>
                     </Card>
                 )
@@ -48,9 +48,6 @@ const List = () => {
         </div>
     )
 }
-
-
-
 
 export default List
 // export default () => (<div><Example /></div>)
