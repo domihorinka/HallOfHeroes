@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card from 'react-bootstrap/card';
+import {Card} from 'react-bootstrap';
 import Button from '../components/Button/Button'
 import API from "../utils/API"
 import { Link } from "react-router-dom"
