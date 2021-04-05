@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import AuthNav from "../AuthNav/AuthNav"
 import { Link } from "react-router-dom";
 
 // ------Importing NavItems------ //
@@ -45,6 +46,7 @@ function Nav() {
                             </li>
                         )
                     })}
+                    <AuthNav />
                 </ul>
             </nav>
         </>
