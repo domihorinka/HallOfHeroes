@@ -20,6 +20,32 @@ function Questions() {
                  {answerText: "fighter", answerValue:"fighter"},       
                  {answerText: "paladin", answerValue:"paladin"}    
             ]
+        
+        },
+        {
+            questionText: `Excellent choice {Adventurer} now being from what classes would you wanna play?`,
+            possibleAnswers: [
+                 {answerText: "rogue", answerValue:"rogue"},       
+                 {answerText: "ranger", answerValue:"ranger"},       
+                 {answerText: "monk", answerValue:"monk"}    
+            ]
+        },
+        {
+            questionText: `Excellent choice {Adventurer} now being from what classes would you wanna play?`,
+            possibleAnswers: [
+                 {answerText: "sorcerer", answerValue:"sorcerer"},       
+                 {answerText: "wizard", answerValue:"wizard"},       
+                 {answerText: "warlock", answerValue:"warlock"},    
+    
+            ]
+        },
+        {
+            questionText: `a fine choice indeed playing a {} with just great {}! now what name should there character have?`,
+            possibleAnswers: [
+                 {answerText: "sorcerer", answerValue:"sorcerer"},       
+                 {answerText: "wizard", answerValue:"wizard"},       
+                 {answerText: "warlock", answerValue:"warlock"}    
+            ]
         }
     ]
 
@@ -28,16 +54,37 @@ function Questions() {
     const [showCharacter,setShowCharacter] = useState([]
 
     );
-
+    let nextQuestion;
+    let numbernew;
+    let makeCharacter;
     const handleButtonClicked = (option) =>{
-        const nextQuestion = currentQuestion + 1;
-        const makeCharacter = showCharacter.push(option);
+
+        if(option == "Dex"){
+            numbernew = 2;
+            makeCharacter = {...showCharacter, Prof: option};
+        }
+       else if(option == "Str"){
+            numbernew = 1;
+            makeCharacter = {...showCharacter, Prof: option};
+        }
+        else if(option == "Int"){
+            numbernew = 3;
+            makeCharacter = {...showCharacter, Prof: option};
+        }
+        else {
+            makeCharacter = {...showCharacter, class: option};
+
+        }
+        nextQuestion = currentQuestion + numbernew;
+
+        
+        
         if(nextQuestion < questions.length){
         setCurrentQuetion(nextQuestion)
-        console.log(option)
-        
+        setShowCharacter(makeCharacter)
         } else {
             console.log(makeCharacter)
+        
         }
     }
 
