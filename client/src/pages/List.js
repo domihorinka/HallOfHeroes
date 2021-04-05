@@ -28,7 +28,7 @@ const List = () => {
     }
 
     // console.log(characters)
-    // console.log(character._id)
+    console.log(characters._id)
     return (
         <div>
             <Link className={`go-to-create`} to="/create">Create New Character!</Link>
