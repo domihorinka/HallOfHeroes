@@ -4,6 +4,7 @@ height: 80px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
+
 }
 
 .menu-bars {
@@ -29,6 +30,7 @@ align-items: center;
 .navMenu.active {
     left: 0;
     transition: 200ms;
+    z-index: 1000;
 }
 
 .navText {
