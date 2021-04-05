@@ -59,15 +59,15 @@ function Create() {
                             className="form-control"
                             placeholder="Character name"
                             name="name"
-                            ref={
-                                register({
-                                    required: "Please Name your character.",
-                                    maxLength: {
-                                        value: 30,
-                                        message: "Please enter a name with fewer than 30 characters"
-                                    }
-                                })
-                            }
+                            // ref={
+                            //     register({
+                            //         required: "Please Name your character.",
+                            //         maxLength: {
+                            //             value: 30,
+                            //             message: "Please enter a name with fewer than 30 characters"
+                            //         }
+                            //     })
+                            // }
                             />
                             <div className="line"></div>
                         </div>

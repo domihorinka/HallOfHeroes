@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import Container from '../components/Container/Container'
+import { useParams } from 'react-router-dom'
 
 
 import API from "../utils/API"
 
-const Details = (props) => {
+const Details = () => {
 
   const [character, setCharacter] = useState([])
 
+  //specifies which character we are viewing with id
   const { id } = useParams()
 
-  useEffect(() => {
-    loadCharacter()
-  }, [])
+  console.log(id)
+
+
 
   function loadCharacter() {
+
+    console.log(id)
     API.getCharacter(id)
       .then(res =>
         setCharacter(res.data)
@@ -23,7 +25,12 @@ const Details = (props) => {
       .catch(err => console.log(err));
   }
 
-  console.log(character)
+
+  useEffect(() => {
+    loadCharacter()
+  }, [])
+
+  console.log(character._id)
 
 
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import AuthNav from "../AuthNav/AuthNav"
 import { Link } from "react-router-dom";
 
 // ------Importing NavItems------ //
@@ -22,9 +23,9 @@ function Nav() {
         <>
             <div className="nav">
                 {/* ------Hamburger menu Icon------ */}
-                <Link className="menu-bars">
+                <button className="menu-bars">
                     <FaIcons.FaBars onClick={showSideNav} />
-                </Link>
+                </button>
             </div>
             <nav className={sideNav ? 'navMenu active' : 'navMenu'}>
                 <ul className='nav-menu-item' onClick={showSideNav}>
@@ -45,6 +46,7 @@ function Nav() {
                             </li>
                         )
                     })}
+                    <AuthNav />
                 </ul>
             </nav>
         </>
