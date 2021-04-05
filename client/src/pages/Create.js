@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Button from '../components/Button/Button'
-import Modal from '../components/Modal/Modal.js'
+// import Modal from '../components/Modal/Modal.js'
 import API from "../utils/API"
 
 // get data and display.
 function Create() {
+    const[successMessage, setSuccessMessage] = useState("")
     const [character, setCharacter] = useState([])
     const [formObject, setFormObject]= useState({})
 
@@ -33,7 +34,7 @@ function Create() {
         appearance: formObject.appearance,
 
       })
-        .catch(err => console.log(err));
+        r.target.reset();
     }
   };
     return (
