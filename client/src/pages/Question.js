@@ -1,5 +1,7 @@
 
 import React ,{useState,useEffect} from 'react';
+import API from "../utils/API"
+
 
 function Questions() {
 
@@ -83,8 +85,7 @@ function Questions() {
         setCurrentQuetion(nextQuestion)
         setShowCharacter(makeCharacter)
         } else {
-            console.log(makeCharacter)
-        
+            
         }
     }
 
