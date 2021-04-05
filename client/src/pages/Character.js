@@ -39,7 +39,19 @@ const Details = () => {
 
 
       <h1>name: {character.name}</h1>
+      <h1>class: {character.class}</h1>
       <h1>level: {character.level}</h1>
+      <h1>hp: {character.hp}</h1>
+      <h1>strength: {character.strength}</h1>
+      <h1>dexterity: {character.dexterity}</h1>
+      <h1>constitution: {character.constitution}</h1>
+      <h1>intelligence: {character.intelligence}</h1>
+      <h1>wisdom: {character.wisdom}</h1>
+      <h1>charisma: {character.charisma}</h1>
+      <h1>inventory: {character.inventory}</h1>
+      <h1>background: {character.background}</h1>
+      <h1>appearance: {character.appearance}</h1>
+      
 
 
 
