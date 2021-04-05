@@ -45,7 +45,7 @@ const List = () => {
                         <Card.Subtitle className="mb-2 text-muted">Level:{character.level}</Card.Subtitle>
                         <Card.Subtitle className="mb-2 text-muted">ID:{character._id}</Card.Subtitle>
                         <Card.Text>{character.background}</Card.Text>
-                        <Button onClick={() => deleteCharacter(character._id)}>Delete</Button>
+                        <Button onClick={() => deleteCharacter(console.log(character._id))}>Delete</Button>
                         <Link to={"/characters/" + character._id}> View Character Sheet</Link>
                     </Card.Body>
                 </Card>
