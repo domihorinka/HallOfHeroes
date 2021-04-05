@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import Container from '../components/Container/Container'
 
 
 import API from "../utils/API"
