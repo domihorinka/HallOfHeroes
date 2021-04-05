@@ -34,7 +34,7 @@ function Create() {
         appearance: formObject.appearance,
 
       })
-        r.target.reset();
+        .then.create();
     }
   };
     return (
