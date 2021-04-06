@@ -24,3 +24,14 @@
     margin: 1rem;
 
 }
+
+
+
+
+@media only screen and (max-width:600px) {
+    .about {
+      height: 100%;
+      margin-bottom:200px;
+      padding-bottom: 35px;
+    }
+}

@@ -53,6 +53,50 @@
   line-height: 1;
 }
 
+.listylist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  list-style: none;
+  width: 30%;
+  position: relative;
+  bottom: 10px;
+}
+
+.listy-items {
+  margin-right: 5px;
+  top: 130px;
+}
+
+.contrib {
+  left: -160px;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    height: 20%;
+    font-size: 15px;
+  }
+  .footerDes {
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    left: -41px;
+  }
+  .contrib {
+    text-align: center;
+    padding-bottom: 14px;
+    position: relative;
+    left: 13px;
+    font-size: 14px;
+  }
+  .listylist {
+    float: none;
+  }
+}
+
 .charCards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,5 +112,26 @@
   color: burlywood;
   font-size: 1rem;
   background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .charCards {
+    height: 100%;
+    margin-bottom: 75px;
+    padding-bottom: 75px;
+  }
+  .indCards {
+    margin-bottom: 72px;
+  }
+  .Create {
+    height: 700px;
+    margin-bottom: 120px;
+  }
+  .btn-main-offer {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'papyrus';
+  }
 }
 /*# sourceMappingURL=cards.css.map */

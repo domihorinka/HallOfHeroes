@@ -3,6 +3,7 @@ import React, {  useState } from 'react'
 // import Modal from '../components/Modal/Modal.js'
 import API from "../utils/API"
 import {useForm} from "react-hook-form";
+import "./cards.css"
 
 // get data and display.
 function Create() {
