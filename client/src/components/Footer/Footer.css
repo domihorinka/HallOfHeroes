@@ -62,7 +62,7 @@
   display: flex;
   float: right;
   list-style: none;
-  length: 30%;
+  width: 30%;
   position: relative;
   bottom: 10px;
 }
