@@ -4,6 +4,7 @@ import React, { useEffect, useState, useParams } from 'react'
 import API from "../utils/API"
 import {useForm} from "react-hook-form";
 import { Link } from "react-router-dom"
+import "./Character-Create.css"
 
 // get data and display.
 function Create() {
@@ -46,9 +47,9 @@ function Create() {
     }
     };
     return (
-        <div className="Create">
+        <div className="Create background">
             <div className="text-center">
-                <h1>Create character</h1>
+                <h1 className="h1cc">Create character</h1>
                 <span className="success-message">{successMessage}</span>
             </div>
             <div className="container">

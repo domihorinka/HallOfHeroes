@@ -1,0 +1,27 @@
+@import "../components/Footer/Footer";
+
+$primaryColor: black;
+
+@mixin fontStyle($fontSize) {
+  font-family: "papyrus";
+  color: burlywood;
+  font-size: $fontSize;
+}
+.background {
+  height: 100;
+  background-color: burlywood !important;
+}
+.h1cc {
+  font-family: "papyrus";
+  font-size: 40px;
+  font-weight: bolder;
+}
+.form-control {
+  background: none;
+}
+.create-btn {
+  margin: 1rem 0 0 0;
+  background: none;
+  width: 100%;
+  color: $primaryColor;
+}

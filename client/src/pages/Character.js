@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
+import "./Character-Create.css"
 
 import API from "../utils/API"
 
@@ -57,9 +57,9 @@ const Details = () => {
 
   return (
     <>
-    <div className="Character">
+    <div className="Character background">
       <div className="text-center">
-        <h1>{character.name}</h1>
+        <h1 className="h1cc">{character.name}</h1>
       </div>
       <div className="container">
         <div className="row">

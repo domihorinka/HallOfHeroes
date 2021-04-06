@@ -52,4 +52,26 @@
   list-style: none;
   line-height: 1;
 }
-/*# sourceMappingURL=Footer.css.map */
+
+.background {
+  height: 100;
+  background-color: burlywood !important;
+}
+
+.h1cc {
+  font-family: "papyrus";
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.form-control {
+  background: none;
+}
+
+.create-btn {
+  margin: 1rem 0 0 0;
+  background: none;
+  width: 100%;
+  color: black;
+}
+/*# sourceMappingURL=Character-Create.css.map */
