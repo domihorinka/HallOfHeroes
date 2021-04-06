@@ -47,7 +47,6 @@ const characterSchema = new Schema({
     //     wizard: {
     //         type:String,
     //     },
-
     // }],
     level: {
         type:Number,
@@ -57,36 +56,35 @@ const characterSchema = new Schema({
         type: Number,
         required: true
     },
-    stats: [{
-        strength: {
-            type: Number,
-            required: true
-        },
-        dexterity: {
-            type: Number,
-            required: true
-        },
-        constitution: {
-            type: Number,
-            required: true
-        },
-        intelligence: {
-            type: Number,
-            required: true
-        },
-        wisdom: {
-            type: Number,
-            required: true
-        },
-        charisma: {
-            type: Number,
-            required: true
-        },
-        charisma: {
-            type: Number,
-            required: true
-        },
-    }],
+    
+    strength: {
+        type: Number,
+        required: true
+    },
+    dexterity: {
+        type: Number,
+        required: true
+    },
+    constitution: {
+        type: Number,
+        required: true
+    },
+    intelligence: {
+        type: Number,
+        required: true
+    },
+    wisdom: {
+        type: Number,
+        required: true
+    },
+    charisma: {
+        type: Number,
+        required: true
+    },
+    charisma: {
+        type: Number,
+        required: true
+    },
     inventory: {
         type: String,
     },
@@ -96,9 +94,6 @@ const characterSchema = new Schema({
     appearance: {
         type: String,
     },
-    // image: {
-    //     type:
-    // }
 });
 
 const character = mongoose.model("character",characterSchema);
