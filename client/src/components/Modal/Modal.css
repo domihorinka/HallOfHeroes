@@ -9,12 +9,15 @@
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 50% !important;
+  left: 50% !important;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: chocolate;
   padding: 50px;
-  z-index: 1000;
+  z-index: 1000 !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
 }
 /*# sourceMappingURL=Modal.css.map */
