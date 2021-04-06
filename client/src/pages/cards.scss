@@ -1,0 +1,13 @@
+@import '../components/Footer/Footer.scss';
+
+.charCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.indCards {
+    margin: 1rem;
+    @include fontStyle(1rem);
+    background-color: $primaryColor
+}

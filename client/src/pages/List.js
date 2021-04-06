@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {Card} from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import API from "../utils/API"
 import { Link } from "react-router-dom"
 import { useAuth0 } from "@auth0/auth0-react";
+import './cards.css'
 
 const List = () => {
     const { isAuthenticated } = useAuth0();
@@ -33,15 +34,14 @@ const List = () => {
     return (
         isAuthenticated && (
 
-            <div>
+            <div className='charCards'>
                 <Link className={`go-to-create`} to="/create">Create New Character!</Link>
                 {characters.map(character => (
-                    <Card style={{ width: '18rem' }} key={character._id}>
+                    <Card className='indCards' style={{ width: '18rem' }} key={character._id}>
                         <Card.Body>
                             <Card.Title>{character.name}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Class:{character.class}</Card.Subtitle>
                             <Card.Subtitle className="mb-2 text-muted">Level:{character.level}</Card.Subtitle>
-                            <Card.Subtitle className="mb-2 text-muted">ID:{character._id}</Card.Subtitle>
                             <Card.Text>{character.background}</Card.Text>
                             <button onClick={() => deleteCharacter(character._id)}>Delete</button>
                             <Link to={"/characters/" + character._id}> View Character Sheet</Link>
