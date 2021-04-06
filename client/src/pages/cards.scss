@@ -11,3 +11,22 @@
     @include fontStyle(1rem);
     background-color: $primaryColor
 }
+
+
+
+
+@media only screen and (max-width:600px) {
+    .charCards {
+      height: 150%;
+    }
+
+    .indCards{
+        margin-bottom: 72px;
+    }
+
+
+
+    .Create{
+        height: 700px;
+    }
+}

@@ -79,4 +79,12 @@
   background-color: black;
   margin: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .about {
+    height: 100%;
+    margin-bottom: 116px;
+    padding-bottom: 35px;
+  }
+}
 /*# sourceMappingURL=About.css.map */
