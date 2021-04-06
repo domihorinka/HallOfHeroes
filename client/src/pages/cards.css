@@ -1,0 +1,72 @@
+.footer {
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 30px;
+  background-color: black;
+  bottom: 0;
+  padding-top: 15px;
+  position: fixed;
+  width: 100%;
+  height: 25%;
+}
+
+.footerDes {
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 25px;
+  float: left;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.contributors {
+  float: right;
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 20px;
+}
+
+.group {
+  float: right;
+  margin-right: 10%;
+}
+
+.group h4 {
+  text-align: right;
+  margin-right: 0px;
+  line-height: 0;
+  text-decoration: underline;
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 23px;
+}
+
+.group a {
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.group li {
+  list-style: none;
+  line-height: 1;
+}
+
+.charCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.indCards {
+  margin: 1rem;
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 1rem;
+  background-color: black;
+}
+/*# sourceMappingURL=cards.css.map */
