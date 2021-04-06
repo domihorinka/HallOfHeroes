@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './pages/Home'
-import SignLog from './pages/SignLog'
 import Create from './pages/Create'
 import List from './pages/List'
 import Character from './pages/Character'
@@ -25,8 +24,6 @@ function App() {
 
 
           <Route exact path={"/"} ><Home /></Route>
-
-          <Route exact path={"/signlog"} ><SignLog /></Route>
 
           <Route exact path={"/create"} ><Create /></Route>
 

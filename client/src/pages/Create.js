@@ -254,7 +254,7 @@ function Create() {
                             />
                             <div className="line"></div>
                         </div>
-                        <button className="btn-main-offer create-btn" onClick={handleFormSubmit} type="submit">create character</button>
+                        <button className="btn-main-offer create-btn btn-outline-dark" onClick={handleFormSubmit} type="submit">create character</button>
                     </div>
                 </div>
                 </form>

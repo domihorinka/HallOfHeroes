@@ -7,28 +7,33 @@
   padding-top: 15px;
   position: fixed;
   width: 100%;
-  height: 10%;
+  height: 7%;
 }
 
 .footerDes {
   font-family: "papyrus";
   color: burlywood;
-  font-size: 25px;
+  font-size: 18px;
   float: left;
-  margin-left: 20%;
-  margin-top: 5%;
+  margin-left: 10%;
+  margin-top: 0%;
 }
 
 .contributors {
   float: right;
   font-family: "papyrus";
   color: burlywood;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .group {
-  float: right;
+  /* float:; */
   margin-right: 10%;
+}
+
+.credits {
+  display: table;
+  margin: 0 auto;
 }
 
 .group h4 {
@@ -38,18 +43,37 @@
   text-decoration: underline;
   font-family: "papyrus";
   color: burlywood;
-  font-size: 23px;
+  font-size: 10px;
 }
 
 .group a {
   font-family: "papyrus";
   color: burlywood;
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
 }
 
 .group li {
   list-style: none;
   line-height: 1;
+}
+
+.listylist {
+  display: flex;
+  float: right;
+  list-style: none;
+  width: 30%;
+  position: relative;
+  bottom: 10px;
+}
+
+.listy-items {
+  margin-right: 5px;
+  top: 130px;
+}
+
+.contrib {
+  left: -160px;
+  position: relative;
 }
 /*# sourceMappingURL=Footer.css.map */
