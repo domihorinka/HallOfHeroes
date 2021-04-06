@@ -1,0 +1,16 @@
+
+@mixin FontStyle ($fontSize) {
+    font-family: 'papyrus';
+    color:burlywood;
+    font-size: $fontSize;
+    
+}
+
+.button{
+    text-align: center;
+    background-color: black;
+    width: 80%;
+    @include FontStyle(20)
+    border:none;
+    text-transform: uppercase;
+}
