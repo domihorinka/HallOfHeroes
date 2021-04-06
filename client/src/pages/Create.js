@@ -3,6 +3,7 @@ import React, { useEffect, useState, useParams } from 'react'
 // import Modal from '../components/Modal/Modal.js'
 import API from "../utils/API"
 import {useForm} from "react-hook-form";
+import { Link } from "react-router-dom"
 
 // get data and display.
 function Create() {
@@ -11,12 +12,12 @@ function Create() {
     const [formObject, setFormObject]= useState({})
     const {register, handleSubmit, errors}= useForm();
 
+
     function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({...formObject, [name]: value})
     };
 
-    
         
     function handleFormSubmit(event,r) {
         // event.preventDefault();
@@ -37,8 +38,10 @@ function Create() {
                 appearance: formObject.appearance,
 
       })
+
       .then(() => {
           setSuccessMessage("New character created successfully!!");
+          r.target.reset()
         }).catch(err => console.log(err));
     }
     };
@@ -75,7 +78,7 @@ function Create() {
                             <input 
                             onChange={handleInputChange}
                             type="text"
-                            className="form-control"
+                            className="form-control reset"
                             placeholder="class"
                             name="class"
                             // ref={

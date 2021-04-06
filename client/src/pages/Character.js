@@ -29,20 +29,11 @@ const Details = () => {
     loadCharacter()
   }, [])
 
-  console.log(character._id)
 
 
   return (
     <>
-      <h1>Single character sheet here</h1>
-
-
-      <h1>name: {character.name}</h1>
-      <h1>class: {character.class}</h1>
-      <h1>level: {character.level}</h1>
-      <h1>hp: {character.hp}</h1>
-      <h1>strength: {character.strength}</h1>
-      <h1>dexterity: {character.dexterity}</h1>
+      {/* <h1>dexterity: {character.dexterity}</h1>
       <h1>constitution: {character.constitution}</h1>
       <h1>intelligence: {character.intelligence}</h1>
       <h1>wisdom: {character.wisdom}</h1>
@@ -50,13 +41,107 @@ const Details = () => {
       <h1>inventory: {character.inventory}</h1>
       <h1>background: {character.background}</h1>
       <h1>appearance: {character.appearance}</h1>
-      
-
+       */}
+    <div className="Character">
+      <div className="text-center">
+        <h1>{character.name}</h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
+            <div className="text-center">
+              <input
+              type="text"
+              className="form-control"
+              placeholder={character.class}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.level}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.hp}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.strength}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.dexterity}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.constitution}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.intelligence}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.wisdom}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="number"
+              className="form-control"
+              placeholder={character.charisma}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="text"
+              className="form-control"
+              placeholder={character.inventory}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="text"
+              className="form-control"
+              placeholder={character.background}
+              />
+            </div>
+            <div className="text-center">
+              <input
+              type="text"
+              className="form-control"
+              placeholder={character.appearance}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
     </>
-  )
+     ) 
 }
 
 export default Details
