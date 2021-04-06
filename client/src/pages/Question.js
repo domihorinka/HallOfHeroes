@@ -1,5 +1,5 @@
 
-import React ,{useState,useEffect} from 'react';
+import React, { useState } from 'react';
 import API from "../utils/API"
 
 
@@ -55,24 +55,24 @@ function Questions(onCancel) {
 
     const [currentQuestion, setCurrentQuetion] = useState(0);
     const [showCharacter, setShowCharacter] = useState([]);
-    const [showModal, setShowModal] = useState(false)
+    // const [showModal, setShowModal] = useState(false)
 
 
     let nextQuestion;
     let numbernew;
     let makeCharacter;
-    const handleButtonClicked = (event,option) => {
-            // event.stopPropagation();
-            // event.preventDefault();
-        if (option == "Dex") {
+    const handleButtonClicked = (event, option) => {
+        // event.stopPropagation();
+        // event.preventDefault();
+        if (option === "Dex") {
             numbernew = 2;
             makeCharacter = { ...showCharacter, Prof: option };
         }
-        else if (option == "Str") {
+        else if (option === "Str") {
             numbernew = 1;
             makeCharacter = { ...showCharacter, Prof: option };
         }
-        else if (option == "Int") {
+        else if (option === "Int") {
             numbernew = 3;
             makeCharacter = { ...showCharacter, Prof: option };
         }
@@ -89,7 +89,7 @@ function Questions(onCancel) {
             setShowCharacter(makeCharacter)
         } else {
             API.saveCharacter(makeCharacter)
-                .then(()=> {
+                .then(() => {
                     console.log(`Good choice making ${makeCharacter}`)
                 })
                 .catch(err => console.log(err));
