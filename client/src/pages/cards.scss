@@ -17,7 +17,9 @@
 
 @media only screen and (max-width:600px) {
     .charCards {
-      height: 150%;
+      height: 100%;
+      margin-bottom: 75px;
+      padding-bottom: 75px;
     }
 
     .indCards{
@@ -28,5 +30,15 @@
 
     .Create{
         height: 700px;
+        margin-bottom: 120px;
+    }
+
+    .btn-main-offer{
+        margin-top:15px;   
+        width: 100%;
+        
+        font-size: 25px;
+        font-family: 'papyrus';
+
     }
 }

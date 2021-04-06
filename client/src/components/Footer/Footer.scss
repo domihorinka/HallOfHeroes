@@ -50,8 +50,29 @@ margin-right: 10%;
     list-style: none;
     line-height: 1;
     }
+
 }
 
+
+
+.listylist {
+    display: flex;
+    float: right;
+    list-style: none;
+    width: 30%;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .listy-items {
+    margin-right: 5px;
+    top: 130px;
+  }
+  
+  .contrib {
+    left: -160px;
+    position: relative;
+  }
 
 
 
@@ -70,5 +91,12 @@ margin-right: 10%;
     .contrib{
         text-align: center;
         padding-bottom: 14px;
+        position: relative;
+        left: 13px;
+        font-size: 14px;
+    }
+    .listylist{
+        float: none;
+
     }
 }

@@ -53,6 +53,27 @@
   line-height: 1;
 }
 
+.listylist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  list-style: none;
+  width: 30%;
+  position: relative;
+  bottom: 10px;
+}
+
+.listy-items {
+  margin-right: 5px;
+  top: 130px;
+}
+
+.contrib {
+  left: -160px;
+  position: relative;
+}
+
 @media only screen and (max-width: 600px) {
   .about {
     height: 20%;
@@ -64,9 +85,15 @@
     position: relative;
     left: -41px;
   }
-  .contrib {
+  h4.contrib {
     text-align: center;
     padding-bottom: 14px;
+    position: relative;
+    left: 13px;
+    font-size: 20px;
+  }
+  .listylist {
+    float: none;
   }
 }
 /*# sourceMappingURL=Footer.css.map */
