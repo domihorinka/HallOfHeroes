@@ -7,37 +7,28 @@
   padding-top: 15px;
   position: fixed;
   width: 100%;
-<<<<<<< HEAD
   height: 25%;
-=======
-  height: 7%;
->>>>>>> main
 }
 
 .footerDes {
   font-family: 'papyrus';
   color: burlywood;
-  font-size: 18px;
+  font-size: 25px;
   float: left;
-  margin-left: 10%;
-  margin-top: 0%;
+  margin-left: 20%;
+  margin-top: 5%;
 }
 
 .contributors {
   float: right;
   font-family: 'papyrus';
   color: burlywood;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .group {
-  /* float:; */
+  float: right;
   margin-right: 10%;
-}
-
-.credits {
-  display: table;
-  margin: 0 auto;
 }
 
 .group h4 {
@@ -47,13 +38,13 @@
   text-decoration: underline;
   font-family: 'papyrus';
   color: burlywood;
-  font-size: 10px;
+  font-size: 23px;
 }
 
 .group a {
   font-family: 'papyrus';
   color: burlywood;
-  font-size: 12px;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -61,27 +52,31 @@
   list-style: none;
   line-height: 1;
 }
-<<<<<<< HEAD
-/*# sourceMappingURL=Footer.css.map */
-=======
 
-.listylist {
-  display: flex;
-  float: right;
-  list-style: none;
-  width: 30%;
-  position: relative;
-  bottom: 10px;
+.about {
+  height: 100vh;
+  background-color: burlywood;
+  text-align: center;
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 2rem;
+  color: black !important;
 }
 
-.listy-items {
-  margin-right: 5px;
-  top: 130px;
+.about .welcome,
+.about .what {
+  font-weight: bolder;
 }
 
-.contrib {
-  left: -160px;
-  position: relative;
+.about .desc {
+  font-size: 1.75rem !important;
 }
-/*# sourceMappingURL=Footer.css.map */
->>>>>>> main
+
+.modalBtn {
+  font-family: 'papyrus';
+  color: burlywood;
+  font-size: 1rem;
+  background-color: black;
+  margin: 1rem;
+}
+/*# sourceMappingURL=About.css.map */
