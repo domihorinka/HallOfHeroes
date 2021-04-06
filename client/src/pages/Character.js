@@ -65,6 +65,7 @@ const Details = () => {
         <div className="row">
           <div className="col-md-6 col-xs-12">
             <div className="text-center">
+              <h4>class</h4>
               <input
               onChange={handleInputChange}
               type="text"
@@ -73,6 +74,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>level</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -81,6 +83,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>hp</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -89,6 +92,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>strength</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -97,6 +101,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>dexterity</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -105,6 +110,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>constitution</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -113,6 +119,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>intelligence</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -121,6 +128,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>wisdom</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -129,6 +137,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>charisma</h4>
               <input
               onChange={handleInputChange}
               type="number"
@@ -136,7 +145,10 @@ const Details = () => {
               placeholder={character.charisma}
               />
             </div>
+            </div>
+            <div className="col-md-6 col-xs-12">
             <div className="text-center">
+              <h4>inventory</h4>
               <input
               onChange={handleInputChange}
               type="text"
@@ -145,6 +157,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>background</h4>
               <input
               onChange={handleInputChange}
               type="text"
@@ -153,6 +166,7 @@ const Details = () => {
               />
             </div>
             <div className="text-center">
+              <h4>appearance</h4>
               <input
               onChange={handleInputChange}
               type="text"

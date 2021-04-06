@@ -207,11 +207,13 @@ function Create() {
                             />
                             <div className="line"></div>
                         </div>
+                        </div>
+                        <div className="col-md-6 col-xs-12">
                         <div className="text-center">
                             <input 
                             onChange={handleInputChange}
                             type="text"
-                            className="form-control"
+                            className="form-control bigger"
                             placeholder="what items and gold does your character have?"
                             name="inventory"
                             // ref={
@@ -226,7 +228,7 @@ function Create() {
                             <input 
                             onChange={handleInputChange}
                             type="text"
-                            className="form-control"
+                            className="form-control bigger"
                             placeholder="What is your character's background"
                             name="background"
                             // ref={
@@ -241,7 +243,7 @@ function Create() {
                             <input 
                             onChange={handleInputChange}
                             type="text"
-                            className="form-control"
+                            className="form-control bigger"
                             placeholder="Describe your character's appearance."
                             name="appearance"
                             // ref={

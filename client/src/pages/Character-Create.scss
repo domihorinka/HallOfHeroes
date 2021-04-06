@@ -18,10 +18,34 @@ $primaryColor: black;
 }
 .form-control {
   background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  color: black;
 }
 .create-btn {
   margin: 1rem 0 0 0;
   background: none;
   width: 100%;
   color: $primaryColor;
+}
+.line {
+  top: -0.8rem;
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  background: black;
+  display: inline-block;
+}
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.background input:focus,
+.background textarea:focus {
+  background: transparent;
+  color: rgb(3, 241, 102);
+  border-bottom: 2px solid rgb(22, 22, 22);
 }
