@@ -1,0 +1,53 @@
+@import url(c:\Users\sapac\Desktop\HallOfHeros\HallOfHeroes\client\src\components\Footer\Footer.css);
+.background {
+  height: 100;
+  background-color: burlywood !important;
+}
+
+.h1cc {
+  font-family: "papyrus";
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.form-control {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  color: black;
+}
+.form-control::placeholder {
+  color: black;
+}
+.create-btn {
+  margin: 1rem 0 0 0;
+  background: none;
+  width: 100%;
+  color: black;
+}
+
+.line {
+  top: -0.8rem;
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  background: brown;
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.background input:focus,
+.background textarea:focus {
+  background: transparent;
+  color: #03f166;
+  border-bottom: 2px solid #161616;
+}
+/*# sourceMappingURL=Character-Create.css.map */
