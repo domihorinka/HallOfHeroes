@@ -1,0 +1,26 @@
+@import '../Footer/Footer.scss';
+
+
+.about {
+    height: 100vh;
+    background-color: burlywood;
+    text-align: center;
+    @include fontStyle(2rem);
+    color: black !important;
+
+    .welcome,
+    .what {
+    font-weight: bolder;
+    }
+
+    .desc {
+        font-size: 1.75rem !important;
+    }
+}
+
+.modalBtn {
+    @include fontStyle(1rem);
+    background-color: $primaryColor;
+    margin: 1rem;
+
+}
