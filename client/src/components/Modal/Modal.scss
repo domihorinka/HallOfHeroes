@@ -4,15 +4,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(0,0,0,.7) ;
+    background-color: rgba(0,0,0,.7);
 }
 
 .modal {
 position: fixed;
-top: 50%;
-left: 50%;
+top: 50% !important;
+left: 50% !important;
 transform: translate(-50%,-50%);
 background-color: chocolate;
 padding: 50px;
-z-index: 1000;
+z-index: 1000 !important;
+display: block !important;
+height: auto !important;
+width: auto !important;
 }
