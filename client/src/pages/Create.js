@@ -1,16 +1,14 @@
-import React, { useEffect, useState, useParams } from 'react'
+import React, {  useState } from 'react'
 // import Button from '../components/Button/Button'
 // import Modal from '../components/Modal/Modal.js'
 import API from "../utils/API"
 import {useForm} from "react-hook-form";
-import { Link } from "react-router-dom"
 
 // get data and display.
 function Create() {
     const [successMessage, setSuccessMessage] = useState("");
-    const [character, setCharacter] = useState([])
     const [formObject, setFormObject]= useState({})
-    const {register, handleSubmit, errors}= useForm();
+    const { handleSubmit}= useForm();
 
 
     function handleInputChange(event) {

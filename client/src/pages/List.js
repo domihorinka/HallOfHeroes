@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import {Card} from 'react-bootstrap';
-import Button from '../components/Button/Button'
 import API from "../utils/API"
 import { Link } from "react-router-dom"
 import { useAuth0 } from "@auth0/auth0-react";
