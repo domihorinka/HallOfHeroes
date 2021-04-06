@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< HEAD
 import {BrowserRouter as Router} from "react-router-dom"; 
-=======
-import { BrowserRouter as Router } from "react-router-dom";
->>>>>>> main
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
