@@ -6,7 +6,7 @@ const LoginButton = () => {
 
     return(
 
-        <button onClick = {() =>{
+        <button className={`button login`} onClick = {() =>{
             loginWithRedirect()
         }}>
             Log In

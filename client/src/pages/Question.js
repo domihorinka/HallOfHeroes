@@ -61,8 +61,9 @@ function Questions(onCancel) {
     let nextQuestion;
     let numbernew;
     let makeCharacter;
-    const handleButtonClicked = (option) => {
-
+    const handleButtonClicked = (event,option) => {
+            // event.stopPropagation();
+            // event.preventDefault();
         if (option == "Dex") {
             numbernew = 2;
             makeCharacter = { ...showCharacter, Prof: option };
@@ -87,7 +88,11 @@ function Questions(onCancel) {
             setCurrentQuetion(nextQuestion)
             setShowCharacter(makeCharacter)
         } else {
-
+            API.saveCharacter(makeCharacter)
+                .then(()=> {
+                    console.log(`Good choice making ${makeCharacter}`)
+                })
+                .catch(err => console.log(err));
         }
     }
 
